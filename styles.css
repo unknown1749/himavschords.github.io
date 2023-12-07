@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6; /* Light gray background */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    color: #fff; /* White text color for h1 */
+}
+
+h2 {
+    /* Keep the default color for h2 */
+}
+
+section {
+    margin: 20px;
+    background-color: #f5f5f5; /* Lighter complementary color for sections */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
+}
+
+p {
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    clear: both; /* Clear both floated elements */
+}
+
+/* Add a class for the text inside the footer */
+.footer-text {
+    max-width: 800px; /* Adjust the max-width based on your preference */
+    margin: 0 auto; /* Center the text */
+    color: #fff; /* White text color */
+}
+
+.footer-text a {
+    color: #fff; /* White text color for links */
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Bold words before the colon and the colon itself */
+#basic-concepts p.definition strong:before,
+#basic-concepts p.importance strong:before,
+#chord-progressions p.definition strong:before,
+#chord-progressions p.common-progressions strong:before,
+#chord-progressions p.emotional-impact strong:before,
+#chord-construction-harmony p.construction strong:before,
+#chord-construction-harmony p.role strong:before,
+#chord-construction-harmony p.inversions-voicings strong:before,
+#genres p.classical strong:before,
+#genres p.jazz strong:before,
+#genres p.rock-pop strong:before,
+#genres p.electronic strong:before,
+#technology p.digital-production strong:before,
+#technology p.electronic-composition strong:before,
+#technology p.automation strong:before,
+#challenges-innovations p.unconventional-progressions strong:before,
+#challenges-innovations p.modern-approaches strong:before,
+#challenges-innovations p.world-music-influences strong:before,
+#conclusion p.summary strong:before,
+#conclusion p.future-trends strong:before,
+#conclusion p.final-thoughts strong:before {
+    font-weight: bold;
+    color: #007bff; /* Blue color for specific keywords */
+    content: '\00a0'; /* Add a non-breaking space after the bolded text to separate it from the rest of the content */
+}
+
+/* Remove italic style for specific sections */
+#chord-progressions p.common-progressions,
+#chord-progressions p.emotional-impact {
+    font-style: normal;
+}
+
+/* Override styles for specific keywords within the footer */
+.footer-text strong {
+    color: #fff; /* White color for specific keywords within the footer */
+}
+
